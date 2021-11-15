@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="=UTF-8">
+        <title>"Reto 3: Bike"</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/misFunciones.js"></script>
+    
+        <body style="background-color: cornflowerblue;">         
+            
+         </div> 
+         <div>
+            <h1 style="color: mediumblue">Reto 3: Bikes</h1>
+            <h2 style="color: mediumblue">Bike</h2>
+            <div id="resultadoBike"></div>
+            <br>
+            <button style="color: mediumblue" onclick="traerInformacionBikes()">Consultar Bikes </button>
+            <br><br>
+            <div>
+                <input type="text" id="Bname" placeholder="Nombre">
+                <input type="text" id="Bbrand" placeholder="Marca">
+                <input type="number" id="Byear" placeholder="Año">
+                <input type="text" id="Bdescription" placeholder="Descriptión">
+            </div>  
+            <button style="color: mediumblue" onclick="guardarInformacionBikes()">Guardar Bikes</button>
+            
+         </div>
+         <div> 
+             <h2 style="color: blue"> Clientes</h2>
+            <div id="resultadoClient"></div>
+            <br>
+            <button style="color: blue" onclick="traerInformacionClient()">Consultar Clientes </button>
+            <br><br>
+            <div>
+                <input type="text" id="CLname" placeholder="Nombre cliente">                
+                <input type="text" id="CLemail" placeholder="Correo electronico">
+                <input type="text" id="CLpassword" placeholder="Contraseña">                
+                <input type="number" id="CLage" placeholder="Edad">
+            </div>  
+            <button style="color: blue" onclick="guardarInformacionClient()">Guardar Clientes</button> 
+
+        </div>
+        <div> 
+            <h2 style="color: blue"> Mensajes</h2>
+           <div id="resultadoMessage"></div>
+           <br>
+           <button style="color: blue" onclick="traerInformacionMessage()">Consultar Mensajes </button>
+           <br><br>
+           <div>
+               <input type="text" id="messageText" placeholder="Mensaje">                
+               <input type="text" id="Mclient" placeholder="cliente">
+               <input type="text" id="Mbike" placeholder="Bike">                
+               
+           </div>  
+           <button style="color: blue" onclick="guardarInformacionMessage()">Guardar Mensajes</button>     
+
+
+        </div>
+        <div> 
+            <h2 style="color: blue"> Reservaciones</h2>
+           <div id="resultadoReservation"></div>
+           <br>
+           <button style="color: blue" onclick="traerInformacionReservation()">Consultar Reservaciones </button>
+           <br><br>
+           <div>
+               <input type="date" id="startDate" placeholder="Fecha de inicio">                
+               <input type="date" id="devolutionDate" placeholder="Fecha entrega">
+               <input type="text" id="Rclient" placeholder="Cliente">
+               <input type="text" id="Rbike" placeholder="Bike">                 
+               
+           </div>  
+           <button style="color: blue" onclick="guardarInformacionReservation()">Guardar Reservaciones</button>      
+
+        </div>
+        <div>
+             <h2 style="color: darkblue"> Categorias</h2>
+            <div id="resultadoCategory"></div>
+            <br>
+            <button style="color: darkblue" onclick="traerInformacionCategory()">Consultar Categorias</button>
+            <br><br>
+            <div>
+                <input type="text" id="Cname" placeholder="Nombre">
+                <input type="text" id="Cdescription" placeholder="descripción">
+            </div>  
+            <button style="color: darkblue" onclick="guardarInformacionCategory()">Guardar Categorias</button> 
+    
+
+    </body>
+</html>
